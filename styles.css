@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+}
+
+body {
+  background: #129FCE;
+}
+
+.section {
+  height: 100vh;
+}
+
+.nav {
+  padding: 0;
+  text-align: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: red;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.nav a:hover {
+  color: grey;
+  text-decoration: none;
+}
+.nav li  {
+  margin-left: 50px;
+  padding-top: 5px;
+  margin: 0px;
+  display: inline-block;
+  position: relative;
+}
+
+.nav a::before {
+  content: " ";
+  display: block;
+  height: 10px;
+  width: 100%;
+  color: purple;
+}
+
+.Home {
+  text-align: center;
+  color: white;
+  background-image: url("https://ak7.picdn.net/shutterstock/videos/12559097/thumb/3.jpg?i10c=img.resize(height:160)");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heading {
+  font-size: 5em;
+}
+
+#secondary {
+  padding-top: 0;
+  font-size: .5em;
+}
+
+.about {
+  text-align: center;
+  margin: auto;
+  padding-top: 20%;
+}
+
+.about p {
+  width: 25%;
+  text-align: center;
+  margin: auto;
+}
+
+.portfolio {
+  text-align: center;
+  margin: auto;
+  padding: 3% 8%;
+  background: #129FCE;
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
+.portfolio h1 {
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+.portfolio .col-xs-4 {
+  margin: 0%;
+  padding: 5%;
+}
+
+.col-centered{
+    float: none;
+    margin: auto;
+}
+
+.contact {
+  text-align: center;
+  background: url("https://static.pexels.com/photos/257897/pexels-photo-257897.jpeg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 13%;
+  padding-bottom: 50%;
+  color: #129FCE;
+}
+
+.contact h1 {
+  font-size: 4em;
+}
+
+input[value] {
+  color: #129FCE;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+input {
+  width: 80%;
+  height: 3em;
+  background-color: rgba(0, 0, 0, .7);
+  text-align: center;
+  #box-shadow: 2px 2px 10px 4px #ccc;
+
+}
+
+input[value=Comments] {
+  height: 10em;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+input[type=submit]{
+  margin-top: 2%
+}
+.footer {
+  background-color: #129FCE;
+}
+
+.left {
+  float: left;
+  margin-left: 20%;
+  margin-top: 1%;
+  text-align: center;
+}
+
+.right {
+  float: right;
+  margin-right: 20%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+/*Testing size
+.col-xs-1 {
+  border: black solid 2px;
+}*/
