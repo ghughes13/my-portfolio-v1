@@ -3,35 +3,46 @@
 }
 
 body {
-  background: #129FCE;
+  background: #eafc40;
 }
 
 .section {
   height: 100vh;
 }
 
+.centerContentInDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/**NAV & Heading**/
+
+
 .nav {
   padding: 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .nav a {
   text-decoration: none;
-  color: red;
+  color: white;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 2em;
 }
 
 .nav a:hover {
   color: grey;
   text-decoration: none;
+  border-radius: 10px;
 }
 .nav li  {
-  margin-left: 50px;
-  padding-top: 5px;
-  margin: 0px;
-  display: inline-block;
-  position: relative;
+  padding-top: 10px;
+  padding-left: 25px;
 }
 
 .nav a::before {
@@ -45,10 +56,12 @@ body {
 .Home {
   text-align: center;
   color: white;
-  background-image: url("https://ak7.picdn.net/shutterstock/videos/12559097/thumb/3.jpg?i10c=img.resize(height:160)");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: -webkit-radial-gradient(bottom,#254558 10% ,#2b2b3a 80%);
+  background: radial-gradient(at bottom,#254558 10%,#2b2b3a 80%);
+  /* background-image: url("https://ak7.picdn.net/shutterstock/videos/12559097/thumb/3.jpg?i10c=img.resize(height:160)"); */
+  /* background-size:cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
 }
 
 .heading {
@@ -56,27 +69,26 @@ body {
 }
 
 #secondary {
-  padding-top: 0;
   font-size: .5em;
 }
 
-.about {
-  text-align: center;
-  margin: auto;
-  padding-top: 20%;
-}
+
+/****About******/
 
 .about p {
-  width: 25%;
+  font-size: 2em;
+  width: 50%;
   text-align: center;
-  margin: auto;
 }
 
+
+/***Portfolio***/
+
+
 .portfolio {
-  text-align: center;
   margin: auto;
   padding: 3% 8%;
-  background: #129FCE;
+  background: #1ed2f4;
 }
 
 img {
@@ -95,16 +107,19 @@ img {
 }
 
 .col-centered{
-    float: none;
     margin: auto;
 }
 
+
+/****Contact*****/
+
+
 .contact {
   text-align: center;
-  background: url("https://static.pexels.com/photos/257897/pexels-photo-257897.jpeg");
-  background-size:cover;
+  background-color: #254558;
+  /* background-size:cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   padding: 13%;
   padding-bottom: 50%;
   color: #129FCE;
@@ -140,8 +155,13 @@ input[type=text]:focus {
 input[type=submit]{
   margin-top: 2%
 }
+
+
+/****Footer*****/
+
+
 .footer {
-  background-color: #129FCE;
+  background-color: #1ed2f4;
 }
 
 .left {
