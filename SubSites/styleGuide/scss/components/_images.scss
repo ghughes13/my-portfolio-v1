@@ -1,0 +1,18 @@
+.img--logo {
+  padding: 5% 3% 0 0 ;
+  @include mq('reg') {
+    padding: 0;
+    margin-right: 20%;
+  }
+}
+
+.img--frame {
+  max-width: 100%;
+  margin-top: 4%;
+  padding: 10px;
+  border: 1px solid $grey
+}
+
+.img--avatar {
+  padding: 5%;
+}

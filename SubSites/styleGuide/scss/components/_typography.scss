@@ -1,0 +1,37 @@
+.card {
+  text-align: left;
+  p:first-child {
+    line-height: 1.5em;
+    font-weight: 400;
+    padding: 10% 0%;
+  }
+  @include mq('reg') {
+    margin-right: 10%;
+  }
+}
+
+.headline--secondary {
+  font-weight: 50;
+  text-align:left;
+  padding-top: 25px;
+  color: $grey
+}
+
+.headline--primary {
+  color: $teal;
+  font-weight: bold;
+  padding-left: 5%;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: $oceanBlue;
+}
+
+.blockquote {
+  font-size: 1.25em;
+  border-left: $teal 8px solid;
+  padding-left: 15px;
+  border-radius: 10px;
+}

@@ -1,0 +1,57 @@
+@mixin btnBase {
+  color: white;
+  font-size: 1.25em;
+  border-radius: 3px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+@mixin mq($width) {
+  @if $width == "reg" {
+    @media (min-width: $brkpt) {
+      @content;
+    }
+  }
+  @else if $width == "lrg" {
+    @media (min-width: $brkpt-L) {
+      @content;
+    }
+  }
+}
+
+@mixin flexBrkPtAddins {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+@each $type, $color in $btnColors {
+  .btn--#{$type} {
+    background-color: $color;
+    margin-top: 5%;
+    width: 100%;
+    text-transform: uppercase;
+    @include btnBase;
+    @media (min-width: $brkpt) {
+      margin: 20px;
+    }
+  }
+}
+
+@each $number, $color in $gridColors {
+  .theme__colors.grid__col--#{$number} {
+    background-color: $color;
+    margin-top: 5px;
+    text-align: left;
+    font-size: .5em;
+    @include btnBase;
+    color: darken(grey, 10%);
+    @media (min-width: $brkpt) {
+      flex: 1;
+      margin: 5px;
+      text-align: center;
+      }
+    }
+  }

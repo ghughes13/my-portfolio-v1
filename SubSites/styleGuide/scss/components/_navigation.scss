@@ -1,0 +1,45 @@
+@import 'utilities/variables';
+
+.nav__item {
+  font-size: 1.5em;
+  flex: 1;
+  padding: 3%;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  &:hover {
+    background-color: $teal;
+    border-radius: 10px;
+    a {
+      color: white;
+    }
+  }
+}
+
+.nav {
+  @include mq('reg') {
+    @include flexBrkPtAddins;
+  .nav__item {
+    font-size: 1em;
+  }
+ }
+}
+
+
+.grid__col--12>.card {
+  text-align: left;
+  p:first-child {
+    line-height: 1.5em;
+    font-weight: 400;
+    padding: 10% 0%;
+  }
+  @include mq('reg') {
+    width: 100%;
+    margin-right: 0%;
+    p:first-child {
+    padding: 0%;
+
+  }
+ }
+}

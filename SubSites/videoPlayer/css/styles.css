@@ -1,0 +1,34 @@
+* {
+  margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+.vidtxt {
+  max-width: 80%;
+}
+
+.mejs__button, .mejs__time-rail{
+    background-color: orange;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 768px;
+    margin: auto;
+  }
+
+  .video {
+    margin-top: 5%;
+  }
+
+  .vidtxt {
+    max-width: 100%;
+  }
+
+}

@@ -1,0 +1,46 @@
+////////////////////
+///Color Variables//
+////////////////////
+
+$teal      : rgb(93, 238, 204);
+$oceanBlue : rgb(35, 186, 219);
+$green     : rgb(48, 180, 97);
+$red       : rgb(222, 98, 98);
+$orange    : rgb(250, 147, 52);
+$purple    : rgb(130, 81, 164);
+$grey      : rgb(147, 147, 147);
+
+////////////////////////
+///Font Stack Variable//
+////////////////////////
+
+$fontStack : 'PT Sans', sans-serif;
+
+////////////////////////
+//Break Point Variables/
+////////////////////////
+
+$brkpt : 768px;
+$brkpt-L : 1224px;
+
+////////////////////////
+///////Color Maps///////
+////////////////////////
+
+$btnColors: (
+  default   : $oceanBlue,
+  success   : $green,
+  error     : $red,
+  warning   : $orange,
+  info      : $purple
+);
+
+$gridColors: (
+  3 : lighten($purple, 30%),
+  4 : lighten($oceanBlue, 20%),
+  5 : lighten($green, 30%),
+  6 : darken($oceanBlue, 10%),
+  7 : lighten($red, 15%),
+  8 : lighten($orange, 15%),
+  12: lighten($green, 28%)
+);

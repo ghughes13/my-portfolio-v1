@@ -2,27 +2,29 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Nav/Main Section -->
+
   <a name="home"></a>
   <div class = "Home section">
-    <!--<div class="nav">-->
       <ul class="nav">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </ul>
-    <!-- </div> -->
     <div class="heading">
       <p id = "main"> Garrett Hughes </p>
-      <p id = "secondary"> Learning to code, one project at a time </p>
+      <p id = "secondary"> Your Next Front End Developer </p>
     </div>
   </div>
+
+<!-- About Section -->
 
   <a name="about"></a>
   <div class ="about section centerContentInDiv">
@@ -30,57 +32,71 @@
     <p> I graduated form Louisiana Tech with a B.S. in Marketing, then realized I love to code. I've been studying HTML, CSS, Python, Data Science concepts, and various other topics for about a year now, online.
   </div>
 
+<!-- Portfolio Section -->
+
   <a name="portfolio"></a>
-  <div class = "portfolio section">
+  <div class = "portfolio section centerContentInDiv">
     <h1> Portfolio </h1>
-    <div class="container-fluid nav">
-      <div class="row">
-        <div class="col-xs-4 .col-centered">
-          <img src="http://jbphotos.com/wp-content/uploads/2013/05/placeholder-862x646.png">
-        </div>
-        <div class="col-xs-4 .col-centered">
-          <img src="http://jbphotos.com/wp-content/uploads/2013/05/placeholder-862x646.png">
-        </div>
-        <div class="col-xs-4 .col-centered">
-          <img src="http://jbphotos.com/wp-content/uploads/2013/05/placeholder-862x646.png">
-        </div>
+    <p> Click on the images below to launch the site
+    <div class="profilelinks">
+      <div class="col">
+        <a href="SubSites\responsiveSite\Index.html" target="_blank">
+          <img src="portfolioPics/responsive.png">
+        </a>
+        <a href="SubSites\videoPlayer\Index.html" target="_blank">
+          <img src="portfolioPics/tablet-desktop.png">
+        </a>
       </div>
-      <div class="row">
-        <div class="col-xs-4 .col-centered">
+      <div class="col">
+        <a href="SubSites\photoGallery\Index.html" target="_blank">
+          <img src="portfolioPics/gallery_mockup.png">
+        </a>
+        <a href="SubSites\styleGuide\html\Index.html" target="_blank">
+          <img src="portfolioPics/desktop1400px_mockup.png">
+        </a>
+      </div>
+      <div class="col">
+        <a href="SubSites\form\Index.html" target="_blank">
+          <img src="portfolioPics/desktop-form.png">
+        </a>
           <img src="http://jbphotos.com/wp-content/uploads/2013/05/placeholder-862x646.png">
-        </div>
-        <div class="col-xs-4 .col-centered">
-          <img src="http://jbphotos.com/wp-content/uploads/2013/05/placeholder-862x646.png">
-        </div>
-        <div class="col-xs-4 .col-centered">
-          <img src="http://jbphotos.com/wp-content/uploads/2013/05/placeholder-862x646.png">
-        </div>
       </div>
       </div>
     </div>
 
+<!-- Contact Section -->
+
   <a name="contact"></a>
-<div class = "contact section">
-    <h1> Contact Me </h1>
+<div class = "contact section centerContentInDiv">
+  <h1> Contact Me </h1>
+  <p> If you're interested in chatting or have any questions I'd love for you to reach out! <p>
+  <ul>
+    <li> Phone: <a href="tel:1-562-867-5309"><strong> (318) 458-8925 </strong></a></li>
+    <li> Email: <a href="mailto:ghughes139@gmail.com"><strong>ghughes139@gmail.com
+    </strong></a></li>
+  </ul>
+    <!-- <h1> Contact Me </h1>
     <form>
       <br><input type="text" name="firstname" value="Name"><br>
       <br><input type="text" name="Email" value="Email"><br>
-      <br><input type="text" name="Comments" value="Comments"><br>
+      <br><input type="text" name="Comments" value="Message"><br>
       <input type="submit" value="Submit">
-    </form>
+    </form> -->
   </div>
+
+<!-- Footer Section -->
 
   <div class = "footer group">
       <div class="left">
         <p> Created by Ghughes13 </p>
-        <p> 2017 All Rights Reserved </p>
+        <p> 2018 All Rights Reserved </p>
       </div>
       <div class="right">
-
-        <a href="https://www.facebook.com/ghughes2" class="fa fa-facebook"></a>
-        <a href="https://twitter.com/Ghughes139" class="fa fa-twitter"></a>
+        <a href="https://www.facebook.com/ghughes2" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://twitter.com/Ghughes139" class="fa fa-twitter" target="_blank"></a>
+        <a href="https://www.facebook.com/ghughes2" class="fa fa-github" target="_blank"></a>
+        <a href="https://www.youtube.com/channel/UC_CWq39fcBPCmgKYZ0yProg?view_as=subscriber" class="fa fa-youtube" target="_blank"></a>
       </div>
   </div>
-
 </body>
 </html>

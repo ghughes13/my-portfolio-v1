@@ -1,0 +1,9 @@
+@import 'utilities/variables';
+@import 'utilities/mixins';
+
+.centered.grid__col--7 {
+    @include mq('reg') {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+}
