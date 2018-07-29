@@ -1,0 +1,81 @@
+body {
+  transition-duration: 1s;
+  background: #64F230;
+  font-size: 1.25em;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+#quotearea {
+  max-width: 90%;
+  margin: auto;
+  margin-top: 20%;
+}
+
+#quote {
+  text-align: center;
+}
+
+#attribution {
+  text-align: right;
+  margin-right: 2%;
+  font-style: italic;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#tag {
+  font-style: normal;
+}
+
+#testing {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.text {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  font-weight: lighter;
+  display: block;
+  position: fixed;
+  left: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 1%;
+  border: solid white 3px;
+  border-radius: 10px;
+  background: transparent;
+  margin-top: 5%;
+  bottom: 35%;
+  margin-left: -120px;
+}
+
+#notice {
+  display: block;
+    position: fixed;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    bottom: 1%;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.35em;
+  }
+}
+
+@media (min-width: 1026px) {
+  body {
+    font-size: 1.5em;
+  }
+
+  #quotearea {
+    max-width: 1000px;
+    margin-top: 150px;
+  }
+}
