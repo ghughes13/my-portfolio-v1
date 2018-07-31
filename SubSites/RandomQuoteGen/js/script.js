@@ -8,32 +8,32 @@ var newQuoteTime = setInterval(getRandomQuote, 30000);
 let quoteArray = [
   {
     quote: "\"It isn't sufficient just to want - you've got to ask yourself what you are going to do to get the things you want.\"",
-    attribution:"- Richard D. Rosen",
+    source:"- Richard D. Rosen",
     tag: "Planning"
   },
   {
     quote:   "\"Doing what you like is freedom. Liking what you do is happiness.\"",
-    attribution: "- Frank Tyger",
+    source: "- Frank Tyger",
     tag: "Motivation"
   },
   {
     quote:   "\"Failure cannot cope with persistence.\"",
-    attribution: "- Napoleon Hill",
+    source: "- Napoleon Hill",
     tag: "Business"
   },
   {
     quote: "\"Success is not counted by how high you have climbed but by how many people you brought with you.\"",
-    attribution:   "- Wil Rose",
+    source:   "- Wil Rose",
     tag: "Motivation"
   },
   {
     quote:  "\"If a book about failures doesn’t sell, is it a success?\"",
-    attribution:   "- Jerry Seinfeld",
+    source:   "- Jerry Seinfeld",
     tag:"Humor"
   },
   {
     quote: "\"A lie gets halfway around the world before the truth has a chance to get its pants on.\"",
-    attribution: "- Winston S. Churchill",
+    source: "- Winston S. Churchill",
     tag: "Humor"
   },
 ];
@@ -53,23 +53,25 @@ let backgroundColors = [
 ];
 
 //Function that gets a random quote, who said it, tag, and new color
-function getRandomQuote() {
-  let quoteNumber = Math.floor(Math.random()*quoteArray.length);
+function getRandomQuote(array) {
+  let quoteNumber = Math.floor(Math.random()*array.length);
   let quoteToPrint = quoteArray[quoteNumber].quote;
-  let attributionToPrint = quoteArray[quoteNumber].attribution;
+  let attributionToPrint = quoteArray[quoteNumber].source;
   let backgroundColor = backgroundColors[Math.floor(Math.random()*backgroundColors.length)];
   let tagToUse = quoteArray[quoteNumber].tag;
-  printQuote(quoteToPrint, attributionToPrint, backgroundColor, tagToUse);
+  return([quoteToPrint, attributionToPrint, backgroundColor, tagToUse]);
 };
 
 //Function what writes new info to page and changes background color
 function printQuote(quoteToPrint, attributionToPrint, backgroundColor, tagToUse){
-  document.getElementById("quote").innerHTML = quoteToPrint;
-  document.getElementById("attribution").innerHTML = attributionToPrint + "<span id=\"tag\"> </span>";
-  document.getElementById("tag").innerHTML = " (" + tagToUse + ")";
-  document.body.style.backgroundColor = backgroundColor;
-
+  let thingsToPrint = getRandomQuote(quoteArray);
+  document.getElementById("quotearea").innerHTML = `
+    <h1 id="quote"> ${thingsToPrint[0]}</h1>
+    <div class="text">
+      <h5 id="source"> ${thingsToPrint[1]}<span id="tag"> (${thingsToPrint[3]})</span></h5>
+    </div> `
+  document.body.style.backgroundColor = thingsToPrint[2];
 }
 
 //Listens for click event on button to generate new quote
-document.getElementById('loadQuote').addEventListener("click", getRandomQuote, false);
+document.getElementById('loadQuote').addEventListener("click", printQuote, false);

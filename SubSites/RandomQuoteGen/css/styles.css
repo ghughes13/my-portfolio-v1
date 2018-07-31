@@ -16,7 +16,7 @@ body {
   text-align: center;
 }
 
-#attribution {
+#source {
   text-align: right;
   margin-right: 2%;
   font-style: italic;
@@ -40,18 +40,17 @@ body {
 
 button {
   font-weight: lighter;
-  display: block;
   position: fixed;
-  left: 50%;
-  margin: auto;
-  text-align: center;
+  /* left: 50%; */
   padding: 1%;
   border: solid white 3px;
   border-radius: 10px;
   background: transparent;
   margin-top: 5%;
   bottom: 35%;
-  margin-left: -120px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 #notice {
