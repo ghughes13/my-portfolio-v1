@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background-color: #edeff0;
+  background-image: url(svgs/background.svg);
+}
+
+/*****Nav Code*****/
+
+nav {
+  color: #39ADD1;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+.nav a {
+  display: flex;
+  flex-direction: row;
+  transition-duration: .25s;
+}
+
+.nav p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.nav:hover #Layer_1 path{
+  fill: rgb(14, 255, 204);
+}
+
+.nav a:hover {
+  color: rgb(14, 255, 204);
+  transform: scale(1.3);
+}
+
+.SVGdiv {
+  padding-right: 10px;
+}
+
+/*******Logo Code********/
+
+.logoSVG {
+  max-width: 140px;
+  max-height: 120px;
+  margin: auto;
+  margin-top: 5%;
+  transition-duration: .5s;
+}
+
+.logoSVG:hover {
+  transform: rotate(360deg) scale(1.3);
+}
+
+#title {
+  visibility: visible;
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%; /* new line */
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #111;
+}
+
+header {
+  padding-top: 10px;
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main {
+  padding-top: 50px;
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+/****Corgi Symbols Code*****/
+
+svg {
+  max-width: 100%;
+}
+
+.sable {
+  color: #BD7D53;
+}
+
+.fawn {
+  color: #E4B287;
+}
+
+.red {
+  color: #884C2F;
+}
+
+.stone {
+  color: #49575D;
+}
+
+.corgies {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dogbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 0px;
+}
+
+.dogbox p {
+  padding-right: 48px;
+  margin-top: 5px;
+  color: maroon;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+.logoSVG #text {
+  visibility: hidden;
+}
+
+/*****Media Queries*****/
+
+@media (min-width: 425px) {
+  .logoSVG #text {
+    visibility: visible;
+  }
+
+  #title {
+    visibility: hidden;
+  }
+
+  .dogbox {
+    margin-right: 15px;
+  }
+}

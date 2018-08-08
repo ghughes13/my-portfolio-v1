@@ -1,7 +1,7 @@
 // FSJS - Random Quote Generator
 
 //Gets new quote after 30 seconds
-var newQuoteTime = setInterval(getRandomQuote, 30000);
+var newQuoteTime = setInterval(printQuote, 30000);
 
 
 //Array Object containing quote data
