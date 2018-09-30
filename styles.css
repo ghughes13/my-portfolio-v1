@@ -26,8 +26,9 @@ ul {
   list-style-type: none;
 }
 
+/*****************/
 /**NAV & Heading**/
-
+/*****************/
 
 .nav {
   margin-top: 0;
@@ -35,6 +36,7 @@ ul {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  float: none;
 }
 
 .nav a {
@@ -69,26 +71,38 @@ ul {
 .Home {
   text-align: center;
   color: white;
-  background: -webkit-radial-gradient(bottom,#254558 10% ,#2b2b3a 80%);
-  background: radial-gradient(at bottom,#254558 10%,#2b2b3a 80%);
-
+  /* background: -webkit-radial-gradient(bottom,#254558 10% ,#2b2b3a 80%);
+  background: radial-gradient(at bottom,#254558 10%,#2b2b3a 80%); */
 }
 
 .heading {
   font-size: 5em;
+  margin-top: 15%;
 }
 
 #main {
   margin-bottom: 0px;
-  margin-top: 4.5em;
 }
 
 #secondary {
   font-size: .5em;
 }
 
+.videoSection {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
 
+/***************/
 /****About******/
+/***************/
+.about {
+  background: rgb(237, 237, 237);
+}
 
 .about p, .about li {
   font-size: 2em;
@@ -109,9 +123,9 @@ ul {
   padding-left: 0;
 }
 
-
+/***************/
 /***Portfolio***/
-
+/***************/
 
 .portfolio {
   padding: 0 8%;
@@ -131,10 +145,11 @@ ul {
 
 .portfolio h1 {
   text-align: center;
+  padding-top: 25px;
 }
 
 .col {
-  flex: 33%;
+  flex: 22%;
   max-width: 30%;
   padding: 0 1%;
   padding-bottom: 5%;
@@ -193,8 +208,9 @@ img {
   transform: scale(1.1);
 }
 
+/****************/
 /****Contact*****/
-
+/****************/
 
 .contact {
   margin: auto;
@@ -202,12 +218,18 @@ img {
   width: 75%;
   color: black;
   font-size: 2em;
-  /* background: white; */
+  background: rgb(237, 237, 237);
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .contact h1 {
   font-size: 2em;
   margin-top: 0px;
+}
+
+#phone {
+  padding-bottom: 25px;
 }
 
 a strong {
@@ -251,9 +273,9 @@ input[type=submit]{
   margin-top: 2%
 } */
 
-
+/***************/
 /****Footer*****/
-
+/***************/
 
 .footer {
   background-color: #254558;
@@ -315,4 +337,38 @@ input[type=submit]{
     color: red;
 }
 
+/******************/
 /* Media Queries */
+/*****************/
+
+@media (max-width : 1024px) {
+ * {
+ font-size: 1em;
+}
+
+ .col {
+   flex: 45%;
+   max-width: 100%;
+   padding: 0 1%;
+ }
+
+ .col:last-child {
+   padding-bottom: 5%;
+ }
+}
+
+@media (max-width:425px) {
+ * {
+ /* font-size: .90em; */
+}
+
+ .col {
+   flex: 90%;
+   max-width: 100%;
+   padding: 0 1%;
+ }
+
+ .col:last-child {
+   padding-bottom: 5%;
+ }
+}
