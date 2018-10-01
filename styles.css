@@ -359,7 +359,7 @@ input[type=submit]{
 
 @media (max-width:425px) {
  * {
- /* font-size: .90em; */
+ font-size: .90em;
 }
 
  .col {

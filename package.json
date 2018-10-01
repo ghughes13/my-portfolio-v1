@@ -1,0 +1,28 @@
+{
+  "name": "portfoliosite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghughes13/PortfolioSite.git"
+  },
+  "author": "Garrett Hughes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ghughes13/PortfolioSite/issues"
+  },
+  "homepage": "https://github.com/ghughes13/PortfolioSite#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-image": "^4.3.0",
+    "gulp-terser": "^1.1.5",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-uglifycss": "^1.1.0"
+  }
+}
