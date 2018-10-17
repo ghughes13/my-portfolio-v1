@@ -13,9 +13,9 @@
 <!-- Nav/Main Section -->
 
   <a id="home"></a>
-  <div class = "Home section">
+  <div class = "Home section" id="videoParent">
     <!-- <div class="fullscreen-bg"> -->
-      <video autoplay muted loop class="videoSection">
+      <video autoplay muted loop class="videoSection" id="video">
         <source src="lakevideo.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
       </video>
@@ -37,17 +37,24 @@
 
   <a id="about"></a>
   <div class ="about section centerContentInDiv">
-    <h1> About Me </h1>
-    <p> I graduated form Louisiana Tech with a B.S. in Marketing, then realized I love to code. I've been studying HTML, CSS, Python, Data Science concepts, and various other topics for about a year now, online.
-      <hr>
-    <h1> Skills </h1>
-    <ul>
+    <h1 class="hide title"> About Me </h1>
+    <p class="hide"> I graduated form Louisiana Tech with a B.S. in Marketing, then realized I love to code.</p>
+
+    <p class="hide">
+       I've been studying HTML, CSS, JavaScript, and a few other web development concepts/languages for a bout 6 months now and am trying to make the jump from the finance industry to the tech industry.
+      <hr class="hide">
+    <h1 class="hide"> Experience With </h1>
+    <ul class="hide">
       <li>HTML</li>
       <li>CSS (SASS)</li>
       <li>JavaScript</li>
       <li>JQuery</li>
       <li>Ajax</li>
-      <li>Python</li>
+      <li>Gulp</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>Express</li>
+      <li>Pug</li>
     </ul>
   </div>
 
@@ -55,7 +62,7 @@
 
   <a id="portfolio"></a>
   <div class = "portfolio section centerContentInDiv">
-    <h1> Portfolio </h1>
+    <h1 class="title"> Portfolio </h1>
     <div class="profilelinks">
 
       <!-- COL 1 -->
@@ -296,7 +303,7 @@
           </div>
         </div>
 
-      </div> 
+      </div>
       <!-- Col 4 Div -->
 
     </div> <!-- Portfolio Links Class Div -->
@@ -306,12 +313,17 @@
 
   <a id="contact"></a>
 <div class = "contact section centerContentInDiv">
-  <h1> Contact Me </h1>
-  <p> If you're interested in chatting or have any questions I'd love for you to reach out! <p>
-  <ul>
+  <h1 class="hide"> Contact Me </h1>
+  <p class="hide"> If you're interested in chatting or have any questions I'd love for you to reach out!</p>
+  <div class="socials hide">
+    <a href="https://www.facebook.com/ghughes2" class="fa fa-facebook hide" target="_blank"></a>
+    <a href="https://twitter.com/Ghughes139" class="fa fa-twitter hide" target="_blank"></a>
+    <a href="https://github.com/ghughes13" class="fa fa-github hide" target="_blank"></a>
+    <a href="https://www.youtube.com/channel/UC_CWq39fcBPCmgKYZ0yProg?view_as=subscriber" class="fa fa-youtube hide" target="_blank"></a>
+  </div>
+  <ul class="hide">
     <li id="phone"> Phone: <a href="tel:1-562-867-5309"><strong> (318) 458-8925 </strong></a></li>
-    <li> Email: <a href="mailto:ghughes139@gmail.com"><strong>ghughes139@gmail.com
-    </strong></a></li>
+    <li> Email: <a href="mailto:ghughes139@gmail.com"><strong>ghughes139@gmail.com</strong></a></li>
   </ul>
     <!-- <h1> Contact Me </h1>
     <form>
@@ -325,16 +337,13 @@
 <!-- Footer Section -->
 
   <div class = "footer group">
-      <div class="left">
         <p> Created by Ghughes13 </p>
         <p> 2018 All Rights Reserved </p>
-      </div>
-      <div class="right">
-        <a href="https://www.facebook.com/ghughes2" class="fa fa-facebook" target="_blank"></a>
-        <a href="https://twitter.com/Ghughes139" class="fa fa-twitter" target="_blank"></a>
-        <a href="https://github.com/ghughes13" class="fa fa-github" target="_blank"></a>
-        <a href="https://www.youtube.com/channel/UC_CWq39fcBPCmgKYZ0yProg?view_as=subscriber" class="fa fa-youtube" target="_blank"></a>
-      </div>
   </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>

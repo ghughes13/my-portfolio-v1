@@ -6,13 +6,13 @@ var gulp = require('gulp'),
     del = require('del'),
     terser = require('gulp-terser');
 
-  gulp.task('copyfiles', () => {
-    return gulp.src(['portfoliopics/**', 'SubSites/**','index.html','lakevideo.mp4','normalize.css','styles.css'], {base : './'})
-    .pipe(gulp.dest('dist'));
-  });
-
   gulp.task('delete', () => {
     return del('dist');
+  });
+
+  gulp.task('copyfiles', () => {
+    return gulp.src(['portfolioPics/**', 'SubSites/**','index.html','lakevideo.mp4','mountainthumb.jpg', 'script.js','normalize.css','styles.css'], {base : './'})
+    .pipe(gulp.dest('dist'));
   });
 
   function es(){
