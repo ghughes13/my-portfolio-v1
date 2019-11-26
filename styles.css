@@ -168,7 +168,7 @@ ul {
 
 .about li img {
   max-width: 200px;
-  height: auto;
+  max-height: 200px;
 }
 
 .about ul {
