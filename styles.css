@@ -163,11 +163,16 @@ ul {
 
 .about li {
   margin-top: 5px;
-  width: 45%;
+  width: 20%;
+}
+
+.about li img {
+  max-width: 200px;
+  height: auto;
 }
 
 .about ul {
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -195,17 +200,6 @@ ul {
   justify-content: center;
   padding: 0 4px;
   padding-top: 10px;
-/************************/
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-  display: none;
-}
-
-.profilelinks h2,
-.work-projects h2 {
-  position: absolute !important;
-  top: 0;
 }
 
 .portfolio h1 {
@@ -283,25 +277,24 @@ img {
   transform: scale(1.1);
 }
 
-.arrow {
+.portfolio .slick-initialized .slick-slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.slick-prev {
   position: absolute;
-  font-size: 50px;
-  color: #f7f7f7;
-  border: solid #f7f7f7;
-  border-radius: 100%;
-  padding: 10px;
-  line-height: .6;
-  cursor: pointer;
+  left: -100px;
 }
 
-.right.arrow {
-  right: 50px;
-  padding-left: 15px;
-}
-
-.left.arrow {
-  left: 50px;
-  padding-right: 15px;
+.slick-next {
+  position: fixed;;
+  right: -100px;
 }
 
 /****************/

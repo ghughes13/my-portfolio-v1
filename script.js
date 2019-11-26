@@ -7,6 +7,11 @@ if (document.documentElement.clientWidth < 425) {
   parent.style.marginBottom = '-40px';
 }
 
+$(document).ready(function(){
+  $('.slider').slick({
+  });
+});
+
 $(document).on("scroll", function () {
   let pageTop = $(document).scrollTop()
   let pageBottom = pageTop + $(window).height()

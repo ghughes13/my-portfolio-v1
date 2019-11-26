@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
 
@@ -31,7 +32,7 @@
       </ul>
     <div class="heading">
         <p id = "main"> Garrett Hughes </p>
-        <p id = "secondary"> Your Next Front End Developer </p>
+        <p id = "secondary"> Your Next Web Developer </p>
     </div>
   </div>
 
@@ -45,19 +46,21 @@
 
     <p class="hide slideUp">
        I worked in the finance industry for about a year after graduating, but wasn't too fond of it. I started spending every second of my free time learning to code and after about 8 months got a job as a web developer at TriDigital Marketing and love every minute of my job!
-      <hr class="hide slideUp">
+    <hr class="hide slideUp">
     <h1 class="hide slideUp"> Experience With </h1>
     <ul class="hide slideUp">
-      <li>HTML</li>
-      <li>CSS (SASS)</li>
-      <li>JavaScript</li>
-      <li>JQuery</li>
-      <li>Wordpress</li>
-      <li>PHP</li>
-      <li>Ajax</li>
-      <li>Gulp</li>
-      <li>React</li>
-      <li>Node.js</li>
+      <li><img src="portfolioPics/skill logos/html.png" alt="HTML"></li>
+      <li><img src="portfolioPics/skill logos/css.png" alt="CSS (SASS)"></li>
+      <li><img src="portfolioPics/skill logos/js.png" alt="JavaScript"></li>
+      <li><img src="portfolioPics/skill logos/wp.png" alt="Wordpress"></li>
+      <li><img src="portfolioPics/skill logos/ts.png" alt="Typescript"></li>
+      <li><img src="portfolioPics/skill logos/git.png" alt="Git"></li>
+      <li><img src="portfolioPics/skill logos/gulp.png" alt="Gulp"></li>
+      <li><img src="portfolioPics/skill logos/react.svg" alt="React"></li>
+      <li><img src="portfolioPics/skill logos/linux.png" alt="Linux"></li>
+      <li><img src="portfolioPics/skill logos/xd.png" alt="Adobe XD"></li>
+      <li><img src="portfolioPics/skill logos/ps.png" alt="Adobe Photoshop"></li>
+      <li><img src="portfolioPics/skill logos/pr.png" alt="Adobe Premier Pro"></li>
     </ul>
   </div>
 
@@ -65,324 +68,455 @@
 
   <a id="portfolio"></a>
   <div class = "portfolio section centerContentInDiv">
-    <span class="left arrow"><</span>
+
     <h1 class="title"> Portfolio </h1>
 
-    <div class="work-projects">
-      <h2>Live Sites</h2>
-      <!-- COL 1 -->
-      <div class="col">
-
-        <!-- RedRock IT -->
-        <div class="picContainer">
-          <img src="portfolioPics/work/Redrock.png" alt="Respontive Portfolio Site">
-          <div class="picOverlay">
-            <h4>Responsive Portfolio</h4>
-            <ul>
-              <li> HTML </li>
-              <li> CSS (Media Queries) </li>
-            </ul>
-            <a href="SubSites/responsiveSite/responseindex.html" target="_blank">
-              <button>See the Site</button>
-            </a>
-            <a href="https://github.com/ghughes13/TreeHouse-WebDev-Project-2" target="_blank">
-              <button>See the Code</button>
-            </a>
-          </div>
+    <div class="slider">
+      <div class="work-projects">
+        <div class="sub-title">
+          <h2>Sites Built At TRIDigital</h2>
         </div>
+        <div class="projects">
+          <div class="col"> <!-- COL 1 -->
+            
+            <div class="picContainer"> <!-- IMAGIS -->
+              <img src="portfolioPics\work\ImagisFull.png" alt="Respontive Portfolio Site">
+              <div class="picOverlay">
+                <h4>Responsive Portfolio</h4>
+                <ul>
+                  <li> HTML </li>
+                  <li> CSS (Media Queries) </li>
+                </ul>
+                <a href="SubSites/responsiveSite/responseindex.html" target="_blank">
+                  <button>See the Site</button>
+                </a>
+                <a href="https://github.com/ghughes13/TreeHouse-WebDev-Project-2" target="_blank">
+                  <button>See the Code</button>
+                </a>
+              </div>
+            </div> <!-- END IMAGIS -->
 
-        <!-- Tech2Bit -->
-        <div class="picContainer">
-          <img src="portfolioPics/work/Capture.png" alt="Video Player Site">
-          <div class="picOverlay">
-            <h4>Video Player</h4>
-            <ul>
-              <li> HTML </li>
-              <li> CSS </li>
-              <li> JavaScript </li>
-            </ul>
-            <a href="SubSites/videoPlayer/videoindex.html" target="_blank">
-              <button>See the Site</button>
-            </a>
-            <a href="https://github.com/ghughes13/TreeHouse_WebDev_Project-6" target="_blank">
-              <button>See the Code</button>
-            </a>
-          </div>
-        </div>
+            <div class="picContainer"> <!-- TECH2BIT -->
+              <img src="portfolioPics\work\Tech2BitFull.png" alt="Video Player Site">
+              <div class="picOverlay">
+                <h4>Video Player</h4>
+                <ul>
+                  <li> HTML </li>
+                  <li> CSS </li>
+                  <li> JavaScript </li>
+                </ul>
+                <a href="SubSites/videoPlayer/videoindex.html" target="_blank">
+                  <button>See the Site</button>
+                </a>
+                <a href="https://github.com/ghughes13/TreeHouse_WebDev_Project-6" target="_blank">
+                  <button>See the Code</button>
+                </a>
+              </div>
+            </div> <!-- END TECH2BIT -->
+          </div> <!-- END COL 1 -->
+          
+          <div class="col"> <!-- COL 2 -->
+            <div class="picContainer"> <!-- RINGLOGIX -->
+              <img src="portfolioPics\work\ringlogixFull.png" alt="SVG Page Picture">
+              <div class="picOverlay">
+                <h4>Employee Directory</h4>
+                <ul>
+                  <li> JavaScript </li>
+                  <li> Ajax </li>
+                </ul>
+                <a href="SubSites/employeeDirectory/employeeDirectory.html" target="_blank">
+                  <button>See the Site</button>
+                </a>
+                <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-5" target="_blank">
+                  <button>See the Code</button>
+                </a>
+              </div>
+            </div> <!-- END RINGLOGIX -->
 
-      </div> <!-- END COL 1 -->
+            <div class="picContainer"> <!-- GDR -->
+              <img src="portfolioPics\work\GDRFull.png" alt="SVG Page Picture">
+              <div class="picOverlay">
+                <h4>Employee Directory</h4>
+                <ul>
+                  <li> JavaScript </li>
+                  <li> Ajax </li>
+                </ul>
+                <a href="SubSites/employeeDirectory/employeeDirectory.html" target="_blank">
+                  <button>See the Site</button>
+                </a>
+                <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-5" target="_blank">
+                  <button>See the Code</button>
+                </a>
+              </div>
+            </div> <!-- END GDR -->
 
-      <!-- COL 3 -->
-      <div class="col">
+            <div class="picContainer"> <!-- MITCHELL -->
+              <img src="portfolioPics\work\michellFull.png" alt="SVG Page Picture">
+              <div class="picOverlay">
+                <h4>Employee Directory</h4>
+                <ul>
+                  <li> JavaScript </li>
+                  <li> Ajax </li>
+                </ul>
+                <a href="SubSites/employeeDirectory/employeeDirectory.html" target="_blank">
+                  <button>See the Site</button>
+                </a>
+                <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-5" target="_blank">
+                  <button>See the Code</button>
+                </a>
+              </div>
+            </div> <!-- END MITCHELL -->
 
-        <!-- Stetson -->
-        <div class="picContainer">
-          <img src="portfolioPics/work/Stetson.png" alt="SVG Page Picture">
-          <div class="picOverlay">
-            <h4>Employee Directory</h4>
-            <ul>
-              <li> JavaScript </li>
-              <li> Ajax </li>
-            </ul>
-            <a href="SubSites/employeeDirectory/employeeDirectory.html" target="_blank">
-              <button>See the Site</button>
-            </a>
-            <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-5" target="_blank">
-              <button>See the Code</button>
-            </a>
-          </div>
-        </div>
+          </div> <!-- END COL 2 -->
 
+          <div class="col"> <!-- COL 3 -->
+              <div class="picContainer"> <!-- REDROCK -->
+                <img src="portfolioPics\work\RedrockFull.png" alt="SVG Page Picture">
+                <div class="picOverlay">
+                  <h4>Employee Directory</h4>
+                  <ul>
+                    <li> JavaScript </li>
+                    <li> Ajax </li>
+                  </ul>
+                  <a href="SubSites/employeeDirectory/employeeDirectory.html" target="_blank">
+                    <button>See the Site</button>
+                  </a>
+                  <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-5" target="_blank">
+                    <button>See the Code</button>
+                  </a>
+                </div>
+              </div> <!-- END REDROCK -->
+
+              <div class="picContainer"> <!-- BECA -->
+                <img src="portfolioPics\work\BECAFull.png" alt="SVG Page Picture">
+                <div class="picOverlay">
+                  <h4>Employee Directory</h4>
+                  <ul>
+                    <li> JavaScript </li>
+                    <li> Ajax </li>
+                  </ul>
+                  <a href="SubSites/employeeDirectory/employeeDirectory.html" target="_blank">
+                    <button>See the Site</button>
+                  </a>
+                  <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-5" target="_blank">
+                    <button>See the Code</button>
+                  </a>
+                </div>
+              </div> <!-- END BECA -->
+
+              <div class="picContainer"> <!-- GROUPONE -->
+                <img src="portfolioPics\work\grouponeFull.png" alt="SVG Page Picture">
+                <div class="picOverlay">
+                  <h4>Employee Directory</h4>
+                  <ul>
+                    <li> JavaScript </li>
+                    <li> Ajax </li>
+                  </ul>
+                  <a href="SubSites/employeeDirectory/employeeDirectory.html" target="_blank">
+                    <button>See the Site</button>
+                  </a>
+                  <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-5" target="_blank">
+                    <button>See the Code</button>
+                  </a>
+                </div>
+              </div> <!-- END GROUPONE -->
+  
+            </div> <!-- END COL 3 -->
+
+            <div class="col"> <!-- COL 4 -->
+                
+                <div class="picContainer"> <!-- PREFERRED -->
+                  <img src="portfolioPics\work\preferredFull.png" alt="SVG Page Picture">
+                  <div class="picOverlay">
+                    <h4>Employee Directory</h4>
+                    <ul>
+                      <li> JavaScript </li>
+                      <li> Ajax </li>
+                    </ul>
+                    <a href="SubSites/employeeDirectory/employeeDirectory.html" target="_blank">
+                      <button>See the Site</button>
+                    </a>
+                    <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-5" target="_blank">
+                      <button>See the Code</button>
+                    </a>
+                  </div>
+                </div> <!-- END PREFERRED -->
+
+                <div class="picContainer"> <!-- ITECH -->
+                  <img src="portfolioPics\work\iTechFull.png" alt="SVG Page Picture">
+                  <div class="picOverlay">
+                    <h4>Employee Directory</h4>
+                    <ul>
+                      <li> JavaScript </li>
+                      <li> Ajax </li>
+                    </ul>
+                    <a href="SubSites/employeeDirectory/employeeDirectory.html" target="_blank">
+                      <button>See the Site</button>
+                    </a>
+                    <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-5" target="_blank">
+                      <button>See the Code</button>
+                    </a>
+                  </div>
+                </div> <!-- END ITECH -->
+
+              </div> <!-- END COL 4 -->
+
+        </div> <!--END PROJECTS CONTAINER-->
       </div>
+
+      <div class="profilelinks">
+        <div class="sub-title">
+          <h2>Practice/Personal Projects</h2>
+        </div>
+        <div class="projects">
+          <!-- COL 1 -->
+          <div class="col">
+
+            <!-- Responsive Portfolio Project -->
+            <div class="picContainer">
+              <img src="portfolioPics/responsive.png" alt="Respontive Portfolio Site">
+              <div class="picOverlay">
+                <h4>Responsive Portfolio</h4>
+                <ul>
+                  <li> HTML </li>
+                  <li> CSS (Media Queries) </li>
+                </ul>
+                <a href="SubSites/responsiveSite/responseindex.html" target="_blank">
+                  <button>See the Site</button>
+                </a>
+                <a href="https://github.com/ghughes13/TreeHouse-WebDev-Project-2" target="_blank">
+                  <button>See the Code</button>
+                </a>
+              </div>
+            </div>
+
+            <!-- Video Player -->
+            <div class="picContainer">
+              <img src="portfolioPics/tablet-desktop.png" alt="Video Player Site">
+              <div class="picOverlay">
+                <h4>Video Player</h4>
+                <ul>
+                  <li> HTML </li>
+                  <li> CSS </li>
+                  <li> JavaScript </li>
+                </ul>
+                <a href="SubSites/videoPlayer/videoindex.html" target="_blank">
+                  <button>See the Site</button>
+                </a>
+                <a href="https://github.com/ghughes13/TreeHouse_WebDev_Project-6" target="_blank">
+                  <button>See the Code</button>
+                </a>
+              </div>
+            </div>
+
+            <!-- Employee Directory -->
+            <div class="picContainer">
+              <img src="portfolioPics/employeeDirectory.png" alt="SVG Page Picture">
+              <div class="picOverlay">
+                <h4>Employee Directory</h4>
+                <ul>
+                  <li> JavaScript </li>
+                  <li> Ajax </li>
+                </ul>
+                <a href="SubSites/employeeDirectory/employeeDirectory.html" target="_blank">
+                  <button>See the Site</button>
+                </a>
+                <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-5" target="_blank">
+                  <button>See the Code</button>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- COL 2 -->
+          <div class="col">
+
+            <!-- Responsive Image Gallery -->
+            <div class="picContainer">
+              <img src="portfolioPics/gallery_mockup.png" alt="Photo Gallery Site">
+              <div class="picOverlay">
+                <h4>Photo Gallery</h4>
+                <ul>
+                  <li> HTML </li>
+                  <li> CSS </li>
+                  <li> JavaScript </li>
+                </ul>
+                <a href="SubSites/photoGallery/galleryindex.html" target="_blank">
+                  <button>See the Site</button>
+                </a>
+                <a href="https://github.com/ghughes13/TreeHouse-WebDev-Project-4" target="_blank">
+                  <button>See the Code</button>
+                </a>
+              </div>
+            </div>
+
+            <!-- Style Guide -->
+            <div class="picContainer">
+              <img src="portfolioPics/desktop1400px_mockup.png" alt="Styleguide Site">
+              <div class="picOverlay">
+                <h4>Responsive Style Guide</h4>
+                <ul>
+                  <li> HTML </li>
+                  <li> CSS (SASS) </li>
+                </ul>
+                <a href="SubSites/styleGuide/html/guideindex.html" target="_blank">
+                  <button>See the Site</button>
+                </a>
+                <a href="https://github.com/ghughes13/TreeHouse-WebDev-Project-5" target="_blank">
+                  <button>See the Code</button>
+                </a>
+              </div>
+            </div>
+
+            <!-- JavaScript Form -->
+            <div class="picContainer">
+              <img src="portfolioPics/jsform.png" alt="Respontive Portfolio Site">
+              <div class="picOverlay">
+                <h4>JavaScript Form Validation</h4>
+                <ul>
+                  <li> HTML </li>
+                  <li> CSS </li>
+                  <li> JavaScript </li>
+                </ul>
+                <a href="SubSites/javascriptForm/jsForm.html" target="_blank">
+                  <button>See the Site</button>
+                </a>
+                <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-3" target="_blank">
+                  <button>See the Code</button>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <!-- COL 3 -->
+          <div class="col">
+
+            <!-- Responsive Web Form -->
+            <div class="picContainer">
+              <img src="portfolioPics/desktop-form.png" alt="Responsive Form Site">
+              <div class="picOverlay">
+                <h4>Responsive Web Form</h4>
+                <ul>
+                  <li> HTML </li>
+                  <li> CSS (flexbox) </li>
+                </ul>
+                <a href="SubSites/form/formindex.html" target="_blank">
+                  <button>See the Site</button>
+                </a>
+                <a href="https://github.com/ghughes13/TreeHouse-WebDev-Project-3" target="_blank">
+                  <button>See the Code</button>
+                </a>
+              </div>
+            </div>
+
+            <!-- Wheel Of Success -->
+            <div class="picContainer">
+              <img src="portfolioPics/WheelOfSuccess.png" alt="Wheel Of Success JS Site">
+              <div class="picOverlay">
+                <h4>Wheel Of Success (Hangman)</h4>
+                <ul>
+                  <li> HTML </li>
+                  <li> CSS  </li>
+                  <li> JavaScript </li>
+                </ul>
+                <a href="SubSites/game_show_app_v1/wheelofsuccess.html" target="_blank">
+                  <button>See the Site</button>
+                </a>
+                <a href="https://github.com/ghughes13/TreeHouse_-WebDev-Project-7" target="_blank">
+                  <button>See the Code</button>
+                </a>
+              </div>
+            </div>
+
+            <!-- SVG Page -->
+            <div class="picContainer">
+              <img src="portfolioPics/svgPage.png" alt="SVG Page Picture">
+              <div class="picOverlay">
+                <h4>Corgie SVG Page</h4>
+                <ul>
+                  <li> HTML </li>
+                  <li> CSS (Manipulating SVGs) </li>
+                </ul>
+                <a href="SubSites/svgProject/svg.html" target="_blank">
+                  <button>See the Site</button>
+                </a>
+                <a href="https://github.com/ghughes13/TreeHouse-WebDev-Project-8" target="_blank">
+                  <button>See the Code</button>
+                </a>
+              </div>
+            </div>
+
+          </div> <!-- Col 3 Div -->
+
+          <!-- COL 4 -->
+          <div class="col">
+
+            <!-- Tic Tac Toe -->
+            <div class="picContainer">
+              <img src="portfolioPics/tictactoe.png" alt="Respontive Portfolio Site">
+              <div class="picOverlay">
+                <h4>Tic Tac Toe</h4>
+                <ul>
+                  <li> HTML </li>
+                  <li> CSS </li>
+                  <li> JavaScript </li>
+                </ul>
+                <a href="SubSites/tictactoe/tictactoe.html" target="_blank">
+                  <button>See the Site</button>
+                </a>
+                <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-4" target="_blank">
+                  <button>See the Code</button>
+                </a>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="picContainer">
+              <img src="portfolioPics/pagination.png" alt="Pagination Page Picture">
+              <div class="picOverlay">
+              <h4>Pagination & Content Filter</h4>
+              <ul>
+                <li> JavaScript </li>
+              </ul>
+              <a href="SubSites/pagination/pagination.html" target="_blank">
+                <button>See the Site</button>
+              </a>
+              <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-2" target="_blank">
+                <button>See the Code</button>
+              </a>
+              </div>
+            </div>
+
+            <!-- Random Quote Generator -->
+            <div class="picContainer">
+              <img src="portfolioPics/randomQuotePic.png" alt="Respontive Portfolio Site">
+              <div class="picOverlay">
+                <h4>Random Quote Generator</h4>
+                <ul>
+                  <li> HTML </li>
+                  <li> CSS </li>
+                  <li> React </li>
+                </ul>
+                <a href="https://codesandbox.io/s/github/ghughes13/FCC-RandomQuoteGen/tree/master/randomquote" target="_blank">
+                  <button>See Site & Code</button>
+                </a>
+                <!-- <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-1" target="_blank">
+                  <button>See the Code</button>
+                </a> -->
+              </div>
+            </div>
+
+          </div>
+          <!-- Col 4 Div -->
+        </div> <!--END PROJECTS CONTAINER-->
+      </div> <!-- Portfolio Links Class Div -->
     </div>
-
-    <div class="profilelinks">
-      <!-- <h2>Team TreeHouse Projects</h2> -->
-      <!-- COL 1 -->
-      <div class="col">
-
-        <!-- Responsive Portfolio Project -->
-        <div class="picContainer">
-          <img src="portfolioPics/responsive.png" alt="Respontive Portfolio Site">
-          <div class="picOverlay">
-            <h4>Responsive Portfolio</h4>
-            <ul>
-              <li> HTML </li>
-              <li> CSS (Media Queries) </li>
-            </ul>
-            <a href="SubSites/responsiveSite/responseindex.html" target="_blank">
-              <button>See the Site</button>
-            </a>
-            <a href="https://github.com/ghughes13/TreeHouse-WebDev-Project-2" target="_blank">
-              <button>See the Code</button>
-            </a>
-          </div>
-        </div>
-
-        <!-- Video Player -->
-        <div class="picContainer">
-          <img src="portfolioPics/tablet-desktop.png" alt="Video Player Site">
-          <div class="picOverlay">
-            <h4>Video Player</h4>
-            <ul>
-              <li> HTML </li>
-              <li> CSS </li>
-              <li> JavaScript </li>
-            </ul>
-            <a href="SubSites/videoPlayer/videoindex.html" target="_blank">
-              <button>See the Site</button>
-            </a>
-            <a href="https://github.com/ghughes13/TreeHouse_WebDev_Project-6" target="_blank">
-              <button>See the Code</button>
-            </a>
-          </div>
-        </div>
-
-        <!-- Employee Directory -->
-        <div class="picContainer">
-          <img src="portfolioPics/employeeDirectory.png" alt="SVG Page Picture">
-          <div class="picOverlay">
-            <h4>Employee Directory</h4>
-            <ul>
-              <li> JavaScript </li>
-              <li> Ajax </li>
-            </ul>
-            <a href="SubSites/employeeDirectory/employeeDirectory.html" target="_blank">
-              <button>See the Site</button>
-            </a>
-            <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-5" target="_blank">
-              <button>See the Code</button>
-            </a>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- COL 2 -->
-      <div class="col">
-
-        <!-- Responsive Image Gallery -->
-        <div class="picContainer">
-          <img src="portfolioPics/gallery_mockup.png" alt="Photo Gallery Site">
-          <div class="picOverlay">
-            <h4>Photo Gallery</h4>
-            <ul>
-              <li> HTML </li>
-              <li> CSS </li>
-              <li> JavaScript </li>
-            </ul>
-            <a href="SubSites/photoGallery/galleryindex.html" target="_blank">
-              <button>See the Site</button>
-            </a>
-            <a href="https://github.com/ghughes13/TreeHouse-WebDev-Project-4" target="_blank">
-              <button>See the Code</button>
-            </a>
-          </div>
-        </div>
-
-        <!-- Style Guide -->
-        <div class="picContainer">
-          <img src="portfolioPics/desktop1400px_mockup.png" alt="Styleguide Site">
-          <div class="picOverlay">
-            <h4>Responsive Style Guide</h4>
-            <ul>
-              <li> HTML </li>
-              <li> CSS (SASS) </li>
-            </ul>
-            <a href="SubSites/styleGuide/html/guideindex.html" target="_blank">
-              <button>See the Site</button>
-            </a>
-            <a href="https://github.com/ghughes13/TreeHouse-WebDev-Project-5" target="_blank">
-              <button>See the Code</button>
-            </a>
-          </div>
-        </div>
-
-        <!-- JavaScript Form -->
-        <div class="picContainer">
-          <img src="portfolioPics/jsform.png" alt="Respontive Portfolio Site">
-          <div class="picOverlay">
-            <h4>JavaScript Form Validation</h4>
-            <ul>
-              <li> HTML </li>
-              <li> CSS </li>
-              <li> JavaScript </li>
-            </ul>
-            <a href="SubSites/javascriptForm/jsForm.html" target="_blank">
-              <button>See the Site</button>
-            </a>
-            <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-3" target="_blank">
-              <button>See the Code</button>
-            </a>
-          </div>
-        </div>
-
-      </div>
-      <!-- COL 3 -->
-      <div class="col">
-
-        <!-- Responsive Web Form -->
-        <div class="picContainer">
-          <img src="portfolioPics/desktop-form.png" alt="Responsive Form Site">
-          <div class="picOverlay">
-            <h4>Responsive Web Form</h4>
-            <ul>
-              <li> HTML </li>
-              <li> CSS (flexbox) </li>
-            </ul>
-            <a href="SubSites/form/formindex.html" target="_blank">
-              <button>See the Site</button>
-            </a>
-            <a href="https://github.com/ghughes13/TreeHouse-WebDev-Project-3" target="_blank">
-              <button>See the Code</button>
-            </a>
-          </div>
-        </div>
-
-        <!-- Wheel Of Success -->
-        <div class="picContainer">
-          <img src="portfolioPics/WheelOfSuccess.png" alt="Wheel Of Success JS Site">
-          <div class="picOverlay">
-            <h4>Wheel Of Success (Hangman)</h4>
-            <ul>
-              <li> HTML </li>
-              <li> CSS  </li>
-              <li> JavaScript </li>
-            </ul>
-            <a href="SubSites/game_show_app_v1/wheelofsuccess.html" target="_blank">
-              <button>See the Site</button>
-            </a>
-            <a href="https://github.com/ghughes13/TreeHouse_-WebDev-Project-7" target="_blank">
-              <button>See the Code</button>
-            </a>
-          </div>
-        </div>
-
-        <!-- SVG Page -->
-        <div class="picContainer">
-          <img src="portfolioPics/svgPage.png" alt="SVG Page Picture">
-          <div class="picOverlay">
-            <h4>Corgie SVG Page</h4>
-            <ul>
-              <li> HTML </li>
-              <li> CSS (Manipulating SVGs) </li>
-            </ul>
-            <a href="SubSites/svgProject/svg.html" target="_blank">
-              <button>See the Site</button>
-            </a>
-            <a href="https://github.com/ghughes13/TreeHouse-WebDev-Project-8" target="_blank">
-              <button>See the Code</button>
-            </a>
-          </div>
-        </div>
-
-      </div> <!-- Col 3 Div -->
-
-      <!-- COL 4 -->
-      <div class="col">
-
-        <!-- Tic Tac Toe -->
-        <div class="picContainer">
-          <img src="portfolioPics/tictactoe.png" alt="Respontive Portfolio Site">
-          <div class="picOverlay">
-            <h4>Tic Tac Toe</h4>
-            <ul>
-              <li> HTML </li>
-              <li> CSS </li>
-              <li> JavaScript </li>
-            </ul>
-            <a href="SubSites/tictactoe/tictactoe.html" target="_blank">
-              <button>See the Site</button>
-            </a>
-            <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-4" target="_blank">
-              <button>See the Code</button>
-            </a>
-          </div>
-        </div>
-
-        <!-- Pagination -->
-        <div class="picContainer">
-          <img src="portfolioPics/pagination.png" alt="Pagination Page Picture">
-          <div class="picOverlay">
-          <h4>Pagination & Content Filter</h4>
-          <ul>
-            <li> JavaScript </li>
-          </ul>
-          <a href="SubSites/pagination/pagination.html" target="_blank">
-            <button>See the Site</button>
-          </a>
-          <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-2" target="_blank">
-            <button>See the Code</button>
-          </a>
-          </div>
-        </div>
-
-        <!-- Random Quote Generator -->
-        <div class="picContainer">
-          <img src="portfolioPics/randomQuotePic.png" alt="Respontive Portfolio Site">
-          <div class="picOverlay">
-            <h4>Random Quote Generator</h4>
-            <ul>
-              <li> HTML </li>
-              <li> CSS </li>
-              <li> React </li>
-            </ul>
-            <a href="https://codesandbox.io/s/github/ghughes13/FCC-RandomQuoteGen/tree/master/randomquote" target="_blank">
-              <button>See Site & Code</button>
-            </a>
-            <!-- <a href="https://github.com/ghughes13/TreeHouse-JSDev-Project-1" target="_blank">
-              <button>See the Code</button>
-            </a> -->
-          </div>
-        </div>
-
-      </div>
-      <!-- Col 4 Div -->
-
-    </div> <!-- Portfolio Links Class Div -->
-    <span class="right arrow">></span>
   </div> <!--Main Portfolio Div -->
 
+
+
+  
 <!-- Contact Section -->
 
   <a id="contact"></a>
@@ -418,6 +552,7 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
