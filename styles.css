@@ -200,12 +200,12 @@ ul {
   max-width: 150px;
   max-height: 150px;
   margin-top: 25px;
-  transition-duration: .25s;
+  transition-duration: .5s;
 }
 
 .about li img:hover {
   transform: scale(1.15);
-  transition-duration: .25s;
+  transition-duration: .5s;
 }
 
 .about ul {
