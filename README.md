@@ -11,3 +11,5 @@ My developer portfolio
 <ul>
   <li>Add sites I've built from work</li>
 </ul>
+
+1st Version of my Portfolio from 2018 when trying to get my first dev job
